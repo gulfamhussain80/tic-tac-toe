@@ -8,7 +8,7 @@ jobs:
             - name: Steps One
               uses: actions/checkout@v2
             - name: Step two
-              run: env | sort
+              run: echo my first job
     job2:
         name: Second Job
         runs-on: windows-latest
@@ -16,4 +16,4 @@ jobs:
             - name: Step One
               uses: actions/checkout@v2
             - name: Step Two
-              run: "Get-ChildItem Env| Sort-Object Name"
+              run: echo my second job
